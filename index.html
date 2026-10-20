@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunian Real Estate — Buy, Sell, Rent &amp; Architectural Developments</title>
+  <meta name="description" content="Discover your dream home with Hunian Real Estate. Clean minimalist architecture, cozy luxury villas, and innovative real estate developments.">
+
+  <!-- Preload First Canvas Frame for Instantaneous Rendering -->
+  <link rel="preload" as="image" href="/frames/frame_001.webp">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Modern Geometric Display & Body) & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ACCESSIBILITY SKIP LINK -->
+  <a href="#hero-stage" class="skip-to-content">Skip to content</a>
+
+  <!-- ========================================================================
+       1. HEADER / NAVBAR (MATCHING REFERENCE EXACTLY)
+       ======================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      
+      <!-- LOGO: GEOMETRIC CUBE ICON + "HUNIAN" -->
+      <a href="#" class="brand-logo" aria-label="Hunian Real Estate Home">
+        <svg class="brand-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+        </svg>
+        <span class="brand-name">Hunian</span>
+      </a>
+
+      <!-- DESKTOP NAVIGATION -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#hero-stage" class="nav-link active">Home</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#roomtour-stage" class="nav-link">Roomtour</a>
+        <a href="#properties" class="nav-link">Properties</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- RIGHT CTA BUTTON: "Start your inquiry" -->
+      <div class="header-action">
+        <button type="button" class="btn-pill-dark btn-inquiry" id="btn-open-inquiry">
+          Start your inquiry
+        </button>
+        <!-- MOBILE HAMBURGER -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- MOBILE DRAWER -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav">
+        <a href="#hero-stage" class="mobile-link">Home</a>
+        <a href="#why-us" class="mobile-link">Why Us</a>
+        <a href="#roomtour-stage" class="mobile-link">Roomtour</a>
+        <a href="#properties" class="mobile-link">Properties</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <button type="button" class="btn-pill-dark mobile-inquiry-btn" id="btn-mobile-inquiry">
+          Start your inquiry
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       2. HERO SECTION: "Buy. Sell. Rent." WITH 240-FRAME SCROLL SCRUBBING
+       ======================================================================== -->
+  <main id="main-content">
+
+    <section id="hero-stage" class="hero-stage" aria-label="Hero Construction Scrollytelling Experience">
+      <div class="hero-sticky-frame">
+        
+        <!-- FULL BLEED 60FPS CANVAS (SCRUBS 240 WEBP FRAMES ON SCROLL) -->
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+        <!-- FULL LEFT SIDE AMBIENT SHADOW (SEAMLESS LEFT EDGE VIGNETTE) -->
+        <div id="hero-left-scrim" class="hero-left-scrim" aria-hidden="true"></div>
+
+        <!-- SOFT ETHEREAL CLOUDS & MIST OVERLAY (BLENDING CANVAS INTO WHITE SECTION) -->
+        <div class="hero-clouds-gradient" aria-hidden="true"></div>
+
+        <!-- TOP RIGHT EDITORIAL TAGLINE (MATCHING REFERENCE EXACT COPY) -->
+        <div class="hero-tagline-card">
+          <p class="tagline-text">
+            Buy. Sell. Rent. — Discover your dream home with a trusted advisory partner.
+          </p>
+        </div>
+
+        <!-- MIDDLE-LEFT EDITORIAL HEADINGS & SUBHEADINGS (CLEAN MINIMALIST, NO EYEBROW) -->
+        <div class="hero-editorial-left">
+          
+          <!-- ACT 01: TERRAIN GENESIS (0% - 25%) -->
+          <div id="act-1" class="act-phase active">
+            <h1 class="act-phase-title">Buy. Sell. Rent.<br>Rooted in nature.</h1>
+            <p class="act-phase-desc">Discover your dream home with a trusted advisory partner. Groundwork and monolithic foundations sculpted amidst pristine pine forests.</p>
+          </div>
+
+          <!-- ACT 02: STRUCTURAL FRAMING (26% - 50%) -->
+          <div id="act-2" class="act-phase">
+            <h2 class="act-phase-title">Precision steel.<br>Minimalist engineering.</h2>
+            <p class="act-phase-desc">Acoustic concrete slabs and architectural steel rising with uncompromising seismic integrity and open-plan spatial harmony.</p>
+          </div>
+
+          <!-- ACT 03: ARCHITECTURAL GLAZING (51% - 75%) -->
+          <div id="act-3" class="act-phase">
+            <h2 class="act-phase-title">Floor-to-ceiling glass.<br>Warm cedar warmth.</h2>
+            <p class="act-phase-desc">Panoramic thermal insulated glazing dissolves the boundary between curated luxury interiors and serene surrounding wilderness.</p>
+          </div>
+
+          <!-- ACT 04: THE COMPLETED SANCTUARY (76% - 100%) -->
+          <div id="act-4" class="act-phase">
+            <h2 class="act-phase-title">Your private escape.<br>Your living masterpiece.</h2>
+            <p class="act-phase-desc">A timeless haven where peaceful forest serenity meets modern architectural elegance and effortless quiet luxury.</p>
+            <div class="act-btn-wrap">
+              <button type="button" class="hero-cta-btn" id="btn-hero-inquiry">
+                <span>Start Your Inquiry</span>
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FLOATING TIMELINE BADGE (PHASE TRACKER) -->
+        <div class="hero-timeline-indicator">
+          <span class="timeline-dot"></span>
+          <span class="timeline-text" id="timeline-label">Phase 01 / Ground Foundation</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       3. ABOUT & PHILOSOPHY TRUST SECTION (MATCHING REFERENCE)
+       ======================================================================== -->
+    <section id="about" class="trust-section" aria-label="About Hunian Real Estate">
+      <div class="section-container trust-grid">
+        
+        <!-- LEFT: PHILOSOPHY STATEMENT -->
+        <div class="trust-left">
+          <div class="sparkle-icon" aria-hidden="true">✦</div>
+          <p class="trust-statement">
+            <strong class="text-contrast">Built on trust and long-term relationships, we guide our clients through every stage of their real estate journey.</strong>
+            <span class="text-muted"> From first-time buyers to seasoned investors, we deliver results that matter.</span>
+          </p>
+          <div class="trust-action">
+            <a href="#properties" class="btn-pill-dark btn-more-about">
+              More about us
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: BIG BOLD STATS -->
+        <div class="trust-right">
+          <div class="stat-item">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction Rate</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Prestigious Properties Sold Monthly</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number">170+</div>
+            <div class="stat-label">Exclusive Properties in Our Portfolio</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       4. SHOWCASE BANNER (MATCHING REFERENCE LUXURY VILLA IMAGE)
+       ======================================================================== -->
+    <section class="showcase-banner" aria-label="Featured Modern Villa Architecture">
+      <div class="section-container banner-container">
+        <div class="banner-image-wrap">
+          <img 
+            src="/images/showcase_wide.jpg" 
+            alt="Villa Lumina contemporary pavilion with floor-to-ceiling glass and reflection pool" 
+            class="banner-img"
+            loading="lazy"
+          >
+          <div class="banner-overlay-content">
+            <span class="banner-badge">Featured Development</span>
+            <h3 class="banner-title">The Glass Pavilion — Bali Ridge</h3>
+            <p class="banner-sub">Floor-to-ceiling glass, private infinity pool, sustainably sourced teak.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       5. "WHY CHOOSE US — Your trusted partner in Real Estate" (MATCHING REFERENCE)
+       ======================================================================== -->
+    <section id="why-us" class="why-section" aria-label="Why Choose Hunian Real Estate">
+      <div class="section-container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-header-split">
+          <div class="header-left">
+            <span class="eyebrow-text">Why Choose Us <span class="eyebrow-line"></span></span>
+            <h2 class="section-heading">Your trusted partner<br>in Real Estate</h2>
+          </div>
+          <div class="header-right">
+            <p class="section-subtext">
+              We believe that finding the right property should be a seamless, transparent, and thoroughly enjoyable experience.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 FEATURE CARDS WITH GEOMETRIC LINE ART -->
+        <div class="feature-cards-grid">
+          
+          <!-- CARD 1: TECHNOLOGY SOLUTIONS -->
+          <article class="feature-card">
+            <div class="feature-icon-wrap">
+              <!-- Geometric Isometric Diamond Icon -->
+              <svg class="geo-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="24,4 42,14 42,34 24,44 6,34 6,14"/>
+                <polygon points="24,12 36,19 36,29 24,36 12,29 12,19"/>
+                <line x1="24" y1="4" x2="24" y2="12"/>
+                <line x1="42" y1="14" x2="36" y2="19"/>
+                <line x1="42" y1="34" x2="36" y2="29"/>
+                <line x1="24" y1="44" x2="24" y2="36"/>
+                <line x1="6" y1="34" x2="12" y2="29"/>
+                <line x1="6" y1="14" x2="12" y2="19"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">TECHNOLOGY SOLUTIONS</h3>
+            <p class="feature-desc">
+              Cutting-edge digital valuation, immersive 3D architectural walkthroughs, and automated deal intelligence designed to streamline every transaction.
+            </p>
+          </article>
+
+          <!-- CARD 2: LONG TERM FOCUS -->
+          <article class="feature-card">
+            <div class="feature-icon-wrap">
+              <!-- Geometric Interlocking Circles Rosette Icon -->
+              <svg class="geo-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="24" cy="18" r="11"/>
+                <circle cx="24" cy="30" r="11"/>
+                <circle cx="18" cy="24" r="11"/>
+                <circle cx="30" cy="24" r="11"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">LONG TERM FOCUS</h3>
+            <p class="feature-desc">
+              Long-range capital appreciation, strict legal verification, and enduring client advisory to protect and multiply your family's real estate equity.
+            </p>
+          </article>
+
+          <!-- CARD 3: QUALITY CRAFTSMANSHIP -->
+          <article class="feature-card">
+            <div class="feature-icon-wrap">
+              <!-- Geometric Sunburst / Precision Compass Icon -->
+              <svg class="geo-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="24" cy="24" r="12"/>
+                <line x1="24" y1="4" x2="24" y2="8"/>
+                <line x1="24" y1="40" x2="24" y2="44"/>
+                <line x1="4" y1="24" x2="8" y2="24"/>
+                <line x1="40" y1="24" x2="44" y2="24"/>
+                <line x1="9.86" y1="9.86" x2="12.69" y2="12.69"/>
+                <line x1="35.31" y1="35.31" x2="38.14" y2="38.14"/>
+                <line x1="9.86" y1="38.14" x2="12.69" y2="35.31"/>
+                <line x1="35.31" y1="12.69" x2="38.14" y2="9.86"/>
+                <circle cx="24" cy="24" r="4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">QUALITY CRAFTSMANSHIP</h3>
+            <p class="feature-desc">
+              Uncompromising standards in minimalist design, curated teak and volcanic stone, and architectural craftsmanship engineered for centuries.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       5B. "ROOMTOUR — Curated Architectural Interior Walkthrough" (MATCHING HERO SCROLLS CRAFT)
+       ======================================================================== -->
+    <section id="roomtour-stage" class="roomtour-section" aria-label="Immersive Roomtour Interior Walkthrough">
+      <div class="section-container">
+        
+        <div class="roomtour-track">
+          <div class="roomtour-sticky-frame">
+            
+            <!-- 60FPS CANVAS (SCRUBS 240 WEBP FRAMES OF VIDEO2 ON SCROLL) -->
+            <canvas id="roomtour-canvas" class="roomtour-canvas"></canvas>
+
+            <!-- FULL LEFT SIDE AMBIENT SHADOW (SEAMLESS LEFT EDGE VIGNETTE) -->
+            <div class="hero-left-scrim" aria-hidden="true"></div>
+
+            <!-- TOP RIGHT EDITORIAL TAGLINE -->
+            <div class="hero-tagline-card">
+              <p class="tagline-text">
+                Interior Architecture — Curated spaces engineered for unrivaled quiet luxury.
+              </p>
+            </div>
+
+            <!-- MIDDLE-LEFT EDITORIAL HEADINGS & SUBHEADINGS (CLEAN MINIMALIST, NO EYEBROW) -->
+            <div class="hero-editorial-left">
+              
+              <!-- ACT 01: CULINARY STUDIO (0% - 25%) -->
+              <div id="roomtour-act-1" class="act-phase active">
+                <h2 class="act-phase-title">Sculpted stone.<br>Artisanal culinary craft.</h2>
+                <p class="act-phase-desc">Monolithic marble kitchen islands paired with concealed architectural appliances, custom brushed metal accents, and discreet ambient illumination.</p>
+              </div>
+
+              <!-- ACT 02: DINING PAVILION (26% - 50%) -->
+              <div id="roomtour-act-2" class="act-phase">
+                <h2 class="act-phase-title">Intimate gatherings.<br>Grand spatial volume.</h2>
+                <p class="act-phase-desc">Double-height dining halls framed by warm cedar acoustic paneling and bespoke pendant lighting, creating an atmosphere of effortless hospitality.</p>
+              </div>
+
+              <!-- ACT 03: SEAMLESS HORIZON (51% - 75%) -->
+              <div id="roomtour-act-3" class="act-phase">
+                <h2 class="act-phase-title">Floor-to-ceiling glass.<br>Unbroken garden vistas.</h2>
+                <p class="act-phase-desc">Thermally insulated panoramic sliding panels that dissolve all boundaries between refined interior elegance and the private outdoor courtyard.</p>
+              </div>
+
+              <!-- ACT 04: THE LIVING SANCTUARY (76% - 100%) -->
+              <div id="roomtour-act-4" class="act-phase">
+                <h2 class="act-phase-title">Peaceful evenings.<br>Unrivaled quiet comfort.</h2>
+                <p class="act-phase-desc">Sink into plush bespoke lounge furnishings bathed in soft dusk glow. Every square meter crafted for serenity and refined repose.</p>
+                <div class="act-btn-wrap">
+                  <button type="button" class="hero-cta-btn" id="btn-roomtour-inquiry">
+                    <span>Schedule a Private Tour</span>
+                    <span class="btn-arrow">→</span>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- FLOATING TIMELINE BADGE (ROOMTOUR TRACKER) -->
+            <div class="hero-timeline-indicator">
+              <span class="timeline-dot"></span>
+              <span class="timeline-text" id="roomtour-timeline-label">Space 01 / Culinary Studio</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       6. "OUR PROPERTIES — Innovative Real Estate Developments" (MATCHING REFERENCE)
+       ======================================================================== -->
+    <section id="properties" class="properties-section" aria-label="Our Properties">
+      <div class="section-container">
+        
+        <!-- SECTION HEADER -->
+        <div class="section-header-split">
+          <div class="header-left">
+            <span class="eyebrow-text">Our Properties <span class="eyebrow-line"></span></span>
+            <h2 class="section-heading">Innovative Real Estate<br>Developments</h2>
+          </div>
+          <div class="header-right">
+            <p class="section-subtext">
+              We take pride in creating and curating exceptional properties that harmonize modern minimalist design, functionality, and cozy comfort.
+            </p>
+          </div>
+        </div>
+
+        <!-- FILTER TABS -->
+        <div class="property-filters" role="tablist" aria-label="Filter Properties by Type">
+          <button type="button" class="filter-btn active" data-category="all" role="tab" aria-selected="true">All Developments</button>
+          <button type="button" class="filter-btn" data-category="villas" role="tab" aria-selected="false">Luxury Villas</button>
+          <button type="button" class="filter-btn" data-category="estates" role="tab" aria-selected="false">Modern Estates</button>
+          <button type="button" class="filter-btn" data-category="penthouses" role="tab" aria-selected="false">Penthouses</button>
+        </div>
+
+        <!-- 6 PROPERTY CARDS GRID (3x2) -->
+        <div class="properties-grid" id="properties-grid">
+          
+          <!-- CARD 1 -->
+          <article class="property-card" data-category="villas">
+            <div class="property-image-box">
+              <img src="/images/prop_1.jpg" alt="Villa Ocean Whisper" class="property-img" loading="lazy">
+              <span class="property-tag">For Sale</span>
+            </div>
+            <div class="property-body">
+              <h3 class="property-name">Villa Ocean Whisper</h3>
+              <p class="property-address">Jl. Pantai Bingin, Uluwatu, Bali</p>
+              <div class="property-meta-chips">
+                <span class="chip">4 bed, 4 bath</span>
+                <span class="chip chip-price">Rp 18.5 M</span>
+                <span class="chip chip-accent">620 m²</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="property-card" data-category="estates">
+            <div class="property-image-box">
+              <img src="/images/prop_2.jpg" alt="The Timber Pavilion" class="property-img" loading="lazy">
+              <span class="property-tag">For Sale</span>
+            </div>
+            <div class="property-body">
+              <h3 class="property-name">The Timber Pavilion</h3>
+              <p class="property-address">Dago Pakar Highland, Bandung</p>
+              <div class="property-meta-chips">
+                <span class="chip">3 bed, 3 bath</span>
+                <span class="chip chip-price">Rp 9.2 M</span>
+                <span class="chip chip-accent">380 m²</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="property-card" data-category="villas">
+            <div class="property-image-box">
+              <img src="/images/prop_3.jpg" alt="Casa Cantilever" class="property-img" loading="lazy">
+              <span class="property-tag">For Sale</span>
+            </div>
+            <div class="property-body">
+              <h3 class="property-name">Casa Cantilever</h3>
+              <p class="property-address">Bukit Peninsula, Bali</p>
+              <div class="property-meta-chips">
+                <span class="chip">5 bed, 5 bath</span>
+                <span class="chip chip-price">Rp 24.0 M</span>
+                <span class="chip chip-accent">850 m²</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="property-card" data-category="estates">
+            <div class="property-image-box">
+              <img src="/images/prop_4.jpg" alt="The Geometric Haven" class="property-img" loading="lazy">
+              <span class="property-tag">For Sale</span>
+            </div>
+            <div class="property-body">
+              <h3 class="property-name">The Geometric Haven</h3>
+              <p class="property-address">Cilandak Barat, South Jakarta</p>
+              <div class="property-meta-chips">
+                <span class="chip">4 bed, 3 bath</span>
+                <span class="chip chip-price">Rp 14.8 M</span>
+                <span class="chip chip-accent">490 m²</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="property-card" data-category="villas">
+            <div class="property-image-box">
+              <img src="/images/prop_5.jpg" alt="Santhi Teak Sanctuary" class="property-img" loading="lazy">
+              <span class="property-tag">For Rent</span>
+            </div>
+            <div class="property-body">
+              <h3 class="property-name">Santhi Teak Sanctuary</h3>
+              <p class="property-address">Sayan Valley Ridge, Ubud, Bali</p>
+              <div class="property-meta-chips">
+                <span class="chip">3 bed, 3 bath</span>
+                <span class="chip chip-price">Rp 65 Jt / Mo</span>
+                <span class="chip chip-accent">410 m²</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="property-card" data-category="penthouses">
+            <div class="property-image-box">
+              <img src="/images/prop_6.jpg" alt="The Woodland Residence" class="property-img" loading="lazy">
+              <span class="property-tag">For Sale</span>
+            </div>
+            <div class="property-body">
+              <h3 class="property-name">The Woodland Residence</h3>
+              <p class="property-address">Pinecrest Valley, Sentul Highlands</p>
+              <div class="property-meta-chips">
+                <span class="chip">4 bed, 4 bath</span>
+                <span class="chip chip-price">Rp 11.2 M</span>
+                <span class="chip chip-accent">520 m²</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- BOTTOM ACTION BUTTON -->
+        <div class="properties-bottom-action">
+          <button type="button" class="btn-pill-dark btn-see-all" id="btn-see-all">
+            See all Properties
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       7. CONTRASTING DARK SERVICES SHOWCASE (MATCHING REFERENCE SECTION)
+       ======================================================================== -->
+    <section id="services" class="dark-services-section" aria-label="Services and Leasing">
+      <div class="section-container">
+        
+        <div class="dark-services-grid">
+          
+          <!-- LEFT COLUMN: NUMBERED SERVICE DESCRIPTIONS -->
+          <div class="dark-left-list">
+            
+            <div class="service-row active" data-service="1">
+              <div class="service-num-badge">1</div>
+              <div class="service-info">
+                <h4 class="service-small-title">Commercial &amp; Office Leasing</h4>
+                <p class="service-text">
+                  Hunian helps companies secure the right prime office space — quickly and confidently. From sub-leases to long-term master leases, we handle search, valuation, and turnkey transitions.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-row" data-service="2">
+              <div class="service-num-badge">2</div>
+              <div class="service-info">
+                <h4 class="service-small-title">High-Visibility Retail Spaces</h4>
+                <p class="service-text">
+                  Strategic locations in high-traffic, prestigious pedestrian and lifestyle corridors to ensure maximum brand exposure and high-yielding customer footfall.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-row" data-service="3">
+              <div class="service-num-badge">3</div>
+              <div class="service-info">
+                <h4 class="service-small-title">Architectural Design &amp; Turnkey Build</h4>
+                <p class="service-text">
+                  End-to-end bespoke development: transforming pristine land parcels into custom minimalist sanctuaries with seamless permit clearance and rigorous engineering.
+                </p>
+              </div>
+            </div>
+
+            <div class="service-row" data-service="4">
+              <div class="service-num-badge">4</div>
+              <div class="service-info">
+                <h4 class="service-small-title">Private Estate Advisory</h4>
+                <p class="service-text">
+                  Discreet wealth management for ultra-high-net-worth real estate holdings, optimizing portfolio yields and handling confidential property acquisitions.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: GIANT DYNAMIC TYPOGRAPHY WITH ARROW -->
+          <div class="dark-right-display">
+            <div class="display-title-wrap">
+              <h3 class="display-giant-title" id="display-service-title">Office Leasing</h3>
+              <div class="display-arrow" aria-hidden="true">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </div>
+            </div>
+            <p class="display-subtext" id="display-service-sub">
+              Curated corporate headquarters &amp; boutique workspaces across Jakarta &amp; Bali.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+       8. CONTACT & INQUIRY SECTION
+       ======================================================================== -->
+    <section id="contact" class="inquiry-banner-section" aria-label="Begin Your Real Estate Journey">
+      <div class="section-container">
+        <div class="inquiry-card-inner">
+          <span class="inquiry-eyebrow">Start Today</span>
+          <h2 class="inquiry-title">Ready to discover your next<br>architectural sanctuary?</h2>
+          <p class="inquiry-subtitle">
+            Connect with our senior private advisors for exclusive off-market listings, private site walkthroughs, and custom build consultations.
+          </p>
+          <div class="inquiry-buttons">
+            <button type="button" class="btn-pill-dark btn-trigger-modal">
+              Schedule a Consultation
+            </button>
+            <a href="tel:+622150008888" class="btn-pill-ghost">
+              +62 21 5000 8888
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       9. CLEAN MINIMALIST FOOTER (MATCHING REFERENCE)
+       ======================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="section-container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- BRAND & NEWSLETTER -->
+        <div class="footer-brand-col">
+          <a href="#" class="footer-brand-logo">
+            <svg class="brand-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/>
+            </svg>
+            <span class="brand-name">Hunian</span>
+          </a>
+          <p class="footer-tagline">
+            Your trusted advisory partner in clean minimalist architectural properties and luxury estates.
+          </p>
+          <form class="newsletter-form" id="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Hunian Insights.');">
+            <input type="email" placeholder="Enter your email" required class="newsletter-input" aria-label="Email address for newsletter">
+            <button type="submit" class="btn-pill-dark btn-newsletter">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- NAVIGATION LINKS -->
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Properties</h5>
+          <ul class="footer-link-list">
+            <li><a href="#properties">Luxury Villas</a></li>
+            <li><a href="#properties">Modern Estates</a></li>
+            <li><a href="#properties">Penthouses</a></li>
+            <li><a href="#properties">Off-Market Portfolios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Services</h5>
+          <ul class="footer-link-list">
+            <li><a href="#services">Office Leasing</a></li>
+            <li><a href="#services">Retail Spaces</a></li>
+            <li><a href="#services">Turnkey Architectural Build</a></li>
+            <li><a href="#services">Private Wealth Advisory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Company</h5>
+          <ul class="footer-link-list">
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#roomtour-stage">Virtual Roomtour</a></li>
+            <li><a href="#contact">Private Advisors</a></li>
+            <li><a href="#contact">Press &amp; Awards</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2026 Hunian Real Estate. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="legal-dot">·</span>
+          <a href="#">Terms of Service</a>
+          <span class="legal-dot">·</span>
+          <a href="#">Security</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       10. INTERACTIVE INQUIRY DIALOG / MODAL
+       ======================================================================== -->
+  <dialog id="inquiry-dialog" class="inquiry-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-content">
+      <button type="button" class="dialog-close-btn" id="dialog-close" aria-label="Close inquiry modal">✕</button>
+      
+      <span class="dialog-badge">Private Advisory</span>
+      <h3 id="dialog-title" class="dialog-title">Start Your Property Inquiry</h3>
+      <p class="dialog-desc">Share your requirements and a dedicated advisor will reach out within 2 hours.</p>
+
+      <form id="inquiry-form" class="inquiry-form">
+        <div class="form-group">
+          <label for="inq-name">Your Full Name</label>
+          <input type="text" id="inq-name" required placeholder="e.g. Amanda Hartono">
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="inq-email">Email Address</label>
+            <input type="email" id="inq-email" required placeholder="amanda@example.com">
+          </div>
+          <div class="form-group">
+            <label for="inq-phone">WhatsApp / Phone</label>
+            <input type="tel" id="inq-phone" placeholder="+62 812 3456 7890">
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label for="inq-type">Interest</label>
+            <select id="inq-type">
+              <option value="buy-villa">Buying a Luxury Villa</option>
+              <option value="modern-estate">Buying a Modern Estate</option>
+              <option value="rent-sanctuary">Long-term Villa Lease</option>
+              <option value="commercial">Commercial / Office Space</option>
+              <option value="custom-build">Turnkey Architectural Build</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="inq-budget">Target Budget</label>
+            <select id="inq-budget">
+              <option value="5-10m">Rp 5 M – 10 M ($350k - $700k)</option>
+              <option value="10-25m">Rp 10 M – 25 M ($700k - $1.7M)</option>
+              <option value="25m+">Rp 25 M+ ($1.7M+)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inq-notes">Notes or Preferences (Optional)</label>
+          <textarea id="inq-notes" rows="3" placeholder="Tell us your preferred location, architectural style, or timeline..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-pill-dark btn-submit-inquiry">
+          Submit Private Inquiry →
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- JAVASCRIPT BUNDLE -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
